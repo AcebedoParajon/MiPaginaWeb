@@ -1,0 +1,18 @@
+{
+  "name": "MiPagina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2",
+    "node-sass": "^4.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w node_modules/materialize-css/sass/components -o css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
