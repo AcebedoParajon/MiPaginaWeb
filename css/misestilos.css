@@ -300,3 +300,25 @@
       transition: none !important;
     }
   }
+
+  @media print{
+    body {
+      background-color: #FFF !important;
+      color: #000000 !important;
+      width: 100% !important;
+    }
+
+    #inicio, header, footer, a, .parallax-container {
+      display: none !important;
+    }
+
+    .informacion h2{
+      font-size: 1em;
+    }
+
+    .informacion::before{
+      content: "Jose Luis Acebedo Parajón";
+      margin: 0 auto;
+      font-size: 2em;
+    }
+  }
