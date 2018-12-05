@@ -8,12 +8,47 @@
     <meta name="keywords" content="desarrollo, web, conductor, camion">
     <meta name="description" content="curriculum Acebedo Parajon desarrollo web conductor camion">
     <title>Acebedo Parajon</title>
-    <link rel="dns-prefetch" href="http://acebedoparajon.esy.es">
-    <link rel="dns-prefetch" href="https://code.jquery.com/jquery-2.1.1.min.js">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130502861-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130502861-1');
+    </script>
+
+    <link rel="dns-prefetch" href="//acebedoparajon.esy.es">
+    <link rel="dns-prefetch" href="//code.jquery.com/jquery-2.1.1.min.js">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
     <link rel="stylesheet" href="css/estilofinal.min.css">
+
+    <!-- Cookies consent -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#237afc"
+        },
+        "button": {
+        "background": "#fff",
+        "text": "#237afc"
+        }
+    },
+    "theme": "classic",
+    "content": {
+        "message": "Este sitio web sólo usa cookies de google analytics para recoger datos estadísticos de visitas.",
+        "dismiss": "Entendido",
+        "link": "Saber más"
+    }
+    })});
+    </script>
 </head>
 
 <body>
@@ -21,7 +56,7 @@
     <div id="inicio">
         <div class="navbar-fixed">
 
-            <nav>
+            <nav role="navigation">
                 <div class="container">
                     <div class="nav-wrapper">
                         <!-- TODO resolver tamaño texto brand-logo en pantallas pequeñas -->
@@ -48,7 +83,7 @@
     </div>
 
     <!-- Header -->
-    <header>
+    <header role="banner">
         <div class="profile-page">
             <div class="wraper">
                 <div class="pg-header pg-header-small">
@@ -71,318 +106,319 @@
     
 
     <!-- Contenido -->
-    <div class="container">
-        <div class="section informacion">
-            <div class="col s12 center">
-                <h2>Información</h2>
+    <main role="main">
+        <div class="container">
+            <div class="section informacion">
+                <div class="col s12 center">
+                    <h2>Información</h2>
+                </div>
+                <div class="row">
+                    <div class="col s12 l6">
+                        <div class="card blue lighten-1 z-depth-3">
+                            <div class="card-content">
+                                <span class="card-title">Sobre mi</span>
+                                <hr>
+                                <p>Menuda mezcla ¿no?, conductor de camión y desarrollador de páginas web.
+                                    Por circunstancias de la vida mi profesión la he dedicado a conducir, pero mi afición
+                                    siempre han sido los ordenadores. En los últimos 15 años me ha fascinado Internet y he
+                                    dedicado mi poco tiempo libre a estudiar HTML, CSS, PHP y JAVASCRIPT .</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                        <div class="card blue lighten-1 z-depth-3">
+                            <div class="card-content">
+                                <span class="card-title">Información básica</span>
+                                <hr>
+                                <p><strong>Residencia:</strong> Ribadesella, Asturias</p>
+                                <p><strong>Fecha nacimiento:</strong> 4/6/1968</p>
+                                <p><strong>Teléfono:</strong> 684 611 875</p>
+                                <p><strong>Email:</strong> acebedo.parajon@gmail.com</p>
+                                <p><strong>Carnets de conducir:</strong>AM, B, C1, C, BE, C1E, CE</p>
+                                <p>CAP y tacógrafo digital</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curriculum -->
+        <div class="parallax-container valign-wrapper" id="cv">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h2 class="header col s12">CURRICULUM VITAE</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2" class="responsive-img"></div>
+        </div>
+        <div class="container">
+            <div class="section">
+                <div class="card blue lighten-1 z-depth-3">
+                    <div class="card-content">
+                        <table class="responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Empresa</th>
+                                    <th>Lugar</th>
+                                    <th>Fecha</th>
+                                    <th>Puesto</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Autónomo en bar</td>
+                                    <td>Infiesto</td>
+                                    <td>Enero 1989-Marzo 1991</td>
+                                    <td>Camarero</td>
+                                </tr>
+                                <tr>
+                                    <td>Jose Antonio Fernádez Fernández</td>
+                                    <td>Infiesto</td>
+                                    <td>Julio 1992-Septiembre 1992</td>
+                                    <td>Mozo de almacén</td>
+                                </tr>
+                                <tr>
+                                    <td>Jose Antonio Fernádez Fernández</td>
+                                    <td>Infiesto</td>
+                                    <td>Junio 1993-Septiembre 1993</td>
+                                    <td>Mozo de almacén</td>
+                                </tr>
+                                <tr>
+                                    <td>Chupa Chups S.A.</td>
+                                    <td>Villamayor</td>
+                                    <td>Junio 1995-Septiembre 1995</td>
+                                    <td>Empaquetador de caramelos</td>
+                                </tr>
+                                <tr>
+                                    <td>GIDECON</td>
+                                    <td>Pola de Siero</td>
+                                    <td>Marzo 1996-Abril 1996</td>
+                                    <td>Peón de albañil</td>
+                                </tr>
+                                <tr>
+                                    <td>Jose Antonio Fernández Fernández</td>
+                                    <td>Infiesto</td>
+                                    <td>Julio 1996-Agosto 1996</td>
+                                    <td>Conductor repartidor productos lácteos (DANONE)</td>
+                                </tr>
+                                <tr>
+                                    <td>Jose Antonio Fernández Fernández</td>
+                                    <td>Infiesto</td>
+                                    <td>Octubre 1996-Marzo 1998</td>
+                                    <td>Conductor repartidor productos lácteos (DANONE)</td>
+                                </tr>
+                                <tr>
+                                    <td>COASA (Comerzializadora asturiana de alimentos</td>
+                                    <td>Pg. de Granda - Siero</td>
+                                    <td>Marzo 1998-Septiembre 2000</td>
+                                    <td>Conductor repartidor de quesos asturianos</td>
+                                </tr>
+                                <tr>
+                                    <td>Hormigones La Caridad</td>
+                                    <td>Ribadesella</td>
+                                    <td>Septiembre 2000 - Junio 2002</td>
+                                    <td>Conductor de hormigonera, manejo de pala cargadora</td>
+                                </tr>
+                                <tr>
+                                    <td>Gutierrez Sustacha, S.L.</td>
+                                    <td>Posada de Llanes</td>
+                                    <td>Junio 2002 - Febrero 2018</td>
+                                    <td>Conductor de camiones rígidos (3 ejes) y articulados (bañera y góndola). Manejo de
+                                        maquinaria pesada (cargadora, retroexcavadora, bulldozer)</td>
+                                </tr>
+                                <tr>
+                                    <td>FCC</td>
+                                    <td>Ribadesella</td>
+                                    <td>Junio 2018 - Septiembre 2018</td>
+                                    <td>Conductor de cuba de agua con baldeo y camión de basura y recogida</td>
+                                </tr>
+                                <tr>
+                                    <td>EXGAN Cuatro Caminos, S.L.</td>
+                                    <td>Villaviciosa</td>
+                                    <td>24 septiembre - 2 octubre 2018</td>
+                                    <td>Conductor de bañera</td>
+                                </tr>
+                                <tr>
+                                    <td>EXGAN Cuatro Caminos, S.L.</td>
+                                    <td>Villaviciosa</td>
+                                    <td>15 al 26 de octubre 2018</td>
+                                    <td>Conductor de bañera</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <a class="waves-effect waves-light btn-large" href="curriculum_acebedo_parajon.pdf" download="curriculum_acebedo_parajon.pdf">Descargar CV</a>
+            </div>
+        </div>
+
+        <!-- Estudios y cursillos -->
+        <div class="parallax-container valign-wrapper" id="estudios">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h2 class="header col s12">Estudios y cursillos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="images/estudios.jpg" alt="foto libro" class="responsive-img"></div>
+        </div>
+        <div class="container">
+            <div class="col s12 card">
+                <span class="card-title">Estudios:</span>
+                <p>Bachillerato en IES de Infiesto</p>
+                <p>Cursos de prevención de riesgos laborales</p>
+            </div>
+            <h5 class="center">Otros cursillos (web)</h5>
+            <div class="row">
+                <div class="col s12 l6">
+                    <img class="certificado responsive-img" src="images/certificado_Curso_Básico_Márketing_Digital-001.jpg"
+                        alt="certificado marketing basico">
+                </div>
+                <div class="col s12 l6">
+                    <img src="images/certificado_Google_Desarrollo_Web_parte1-001.jpg" alt="certificado desarrollo web parte 1"
+                        class="certificado responsive-img">
+                </div>
             </div>
             <div class="row">
                 <div class="col s12 l6">
-                    <div class="card blue lighten-1 z-depth-3">
-                        <div class="card-content">
-                            <span class="card-title">Sobre mi</span>
-                            <hr>
-                            <p>Menuda mezcla ¿no?, conductor de camión y desarrollador de páginas web.
-                                Por circunstancias de la vida mi profesión la he dedicado a conducir, pero mi afición
-                                siempre han sido los ordenadores. En los últimos 15 años me ha fascinado Internet y he
-                                dedicado mi poco tiempo libre a estudiar HTML, CSS, PHP y JAVASCRIPT .</p>
-                        </div>
-
-                    </div>
+                    <img src="images/certificado_Google_Desarrollo_web_parte2-001.jpg" alt="certificado desarrollo web parte 2"
+                        class="certificado responsive-img">
                 </div>
                 <div class="col s12 l6">
-                    <div class="card blue lighten-1 z-depth-3">
-                        <div class="card-content">
-                            <span class="card-title">Información básica</span>
-                            <hr>
-                            <p><strong>Residencia:</strong> Ribadesella, Asturias</p>
-                            <p><strong>Fecha nacimiento:</strong> 4/6/1968</p>
-                            <p><strong>Teléfono:</strong> 684 611 875</p>
-                            <p><strong>Email:</strong> acebedo.parajon@gmail.com</p>
-                            <p><strong>Carnets de conducir:</strong>AM, B, C1, C, BE, C1E, CE</p>
-                            <p>CAP y tacógrafo digital</p>
+                    <div class="freecodecamp">
+                        <div class="center">
+                            <h5 class="card-title">freeCodeCamp</h5>
+                            <p>Curso de desarrollo web 300 horas</p>
+                            <a href="https://www.freecodecamp.org/certification/fcce1979583-2784-474d-a22d-d3286ff5d941/responsive-web-design"
+                                target="_blank">Ver certificado</a>
+                            <p>Curso de Javascript 300 horas</p>
+                            <a href="https://www.freecodecamp.org/certification/fcce1979583-2784-474d-a22d-d3286ff5d941/javascript-algorithms-and-data-structures"
+                                target="_blank">Ver certificado</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <hr>
 
-    <!-- Curriculum -->
-    <div class="parallax-container valign-wrapper" id="cv">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h2 class="header col s12">CURRICULUM VITAE</h2>
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2" class="responsive-img"></div>
-    </div>
-    <div class="container">
-        <div class="section">
-            <div class="card blue lighten-1 z-depth-3">
-                <div class="card-content">
-                    <table class="responsive-table">
-                        <thead>
-                            <tr>
-                                <th>Empresa</th>
-                                <th>Lugar</th>
-                                <th>Fecha</th>
-                                <th>Puesto</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Autónomo en bar</td>
-                                <td>Infiesto</td>
-                                <td>Enero 1989-Marzo 1991</td>
-                                <td>Camarero</td>
-                            </tr>
-                            <tr>
-                                <td>Jose Antonio Fernádez Fernández</td>
-                                <td>Infiesto</td>
-                                <td>Julio 1992-Septiembre 1992</td>
-                                <td>Mozo de almacén</td>
-                            </tr>
-                            <tr>
-                                <td>Jose Antonio Fernádez Fernández</td>
-                                <td>Infiesto</td>
-                                <td>Junio 1993-Septiembre 1993</td>
-                                <td>Mozo de almacén</td>
-                            </tr>
-                            <tr>
-                                <td>Chupa Chups S.A.</td>
-                                <td>Villamayor</td>
-                                <td>Junio 1995-Septiembre 1995</td>
-                                <td>Empaquetador de caramelos</td>
-                            </tr>
-                            <tr>
-                                <td>GIDECON</td>
-                                <td>Pola de Siero</td>
-                                <td>Marzo 1996-Abril 1996</td>
-                                <td>Peón de albañil</td>
-                            </tr>
-                            <tr>
-                                <td>Jose Antonio Fernández Fernández</td>
-                                <td>Infiesto</td>
-                                <td>Julio 1996-Agosto 1996</td>
-                                <td>Conductor repartidor productos lácteos (DANONE)</td>
-                            </tr>
-                            <tr>
-                                <td>Jose Antonio Fernández Fernández</td>
-                                <td>Infiesto</td>
-                                <td>Octubre 1996-Marzo 1998</td>
-                                <td>Conductor repartidor productos lácteos (DANONE)</td>
-                            </tr>
-                            <tr>
-                                <td>COASA (Comerzializadora asturiana de alimentos</td>
-                                <td>Pg. de Granda - Siero</td>
-                                <td>Marzo 1998-Septiembre 2000</td>
-                                <td>Conductor repartidor de quesos asturianos</td>
-                            </tr>
-                            <tr>
-                                <td>Hormigones La Caridad</td>
-                                <td>Ribadesella</td>
-                                <td>Septiembre 2000 - Junio 2002</td>
-                                <td>Conductor de hormigonera, manejo de pala cargadora</td>
-                            </tr>
-                            <tr>
-                                <td>Gutierrez Sustacha, S.L.</td>
-                                <td>Posada de Llanes</td>
-                                <td>Junio 2002 - Febrero 2018</td>
-                                <td>Conductor de camiones rígidos (3 ejes) y articulados (bañera y góndola). Manejo de
-                                    maquinaria pesada (cargadora, retroexcavadora, bulldozer)</td>
-                            </tr>
-                            <tr>
-                                <td>FCC</td>
-                                <td>Ribadesella</td>
-                                <td>Junio 2018 - Septiembre 2018</td>
-                                <td>Conductor de cuba de agua con baldeo y camión de basura y recogida</td>
-                            </tr>
-                            <tr>
-                                <td>EXGAN Cuatro Caminos, S.L.</td>
-                                <td>Villaviciosa</td>
-                                <td>24 septiembre - 2 octubre 2018</td>
-                                <td>Conductor de bañera</td>
-                            </tr>
-                            <tr>
-                                <td>EXGAN Cuatro Caminos, S.L.</td>
-                                <td>Villaviciosa</td>
-                                <td>15 al 26 de octubre 2018</td>
-                                <td>Conductor de bañera</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="row center">
-            <a class="waves-effect waves-light btn-large" href="curriculum_acebedo_parajon.pdf" download="curriculum_acebedo_parajon.pdf">Descargar CV</a>
-        </div>
-    </div>
-
-    <!-- Estudios y cursillos -->
-    <div class="parallax-container valign-wrapper" id="estudios">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h2 class="header col s12">Estudios y cursillos</h2>
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="images/estudios.jpg" alt="foto libro" class="responsive-img"></div>
-    </div>
-    <div class="container">
-        <div class="col s12 card">
-            <span class="card-title">Estudios:</span>
-            <p>Bachillerato en IES de Infiesto</p>
-            <p>Cursos de prevención de riesgos laborales</p>
-        </div>
-        <h5 class="center">Otros cursillos (web)</h5>
-        <div class="row">
-            <div class="col s12 l6">
-                <img class="certificado responsive-img" src="images/certificado_Curso_Básico_Márketing_Digital-001.jpg"
-                    alt="certificado marketing basico">
-            </div>
-            <div class="col s12 l6">
-                <img src="images/certificado_Google_Desarrollo_Web_parte1-001.jpg" alt="certificado desarrollo web parte 1"
-                    class="certificado responsive-img">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l6">
-                <img src="images/certificado_Google_Desarrollo_web_parte2-001.jpg" alt="certificado desarrollo web parte 2"
-                    class="certificado responsive-img">
-            </div>
-            <div class="col s12 l6">
-                <div class="freecodecamp">
-                    <div class="center">
-                        <h5 class="card-title">freeCodeCamp</h5>
-                        <p>Curso de desarrollo web 300 horas</p>
-                        <a href="https://www.freecodecamp.org/certification/fcce1979583-2784-474d-a22d-d3286ff5d941/responsive-web-design"
-                            target="_blank">Ver certificado</a>
-                        <p>Curso de Javascript 300 horas</p>
-                        <a href="https://www.freecodecamp.org/certification/fcce1979583-2784-474d-a22d-d3286ff5d941/javascript-algorithms-and-data-structures"
-                            target="_blank">Ver certificado</a>
+        <!-- Proyectos -->
+        <div class="parallax-container valign-wrapper" id="proyectos">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h2 class="header col s12">Proyectos web</h2>
                     </div>
                 </div>
             </div>
+            <div class="parallax"><img src="images/proyectosweb.jpg" alt="foto libro" class="responsive-img"></div>
         </div>
-    </div>
-    <hr>
-
-    <!-- Proyectos -->
-    <div class="parallax-container valign-wrapper" id="proyectos">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h2 class="header col s12">Proyectos web</h2>
+        <div class="container">
+            <div class="row center"><h6>(Las páginas están alojadas en servidores gratuitos y es posible alguna tarde en cargar)</h6></div>
+            <div class="row card animar" data-av-animation="slideInLeft">
+                <div class="icon-proyectos col m2 blue lighten-4">
+                    <i class="material-icons medium">build</i>
+                </div>
+                <div class="col m10">
+                    <a href="www.talleresguadamia.com" target="_blank">
+                        <div class="text-proyectos">
+                            <h5>Talleres Guadamia</h5>
+                            <hr>
+                            <p>Página web de un taller de autómiles modificada recientemente para su visualización en
+                                dispositivos móviles. Realizada en HTML 5, CSS 3 y algo de JAVASCRIPT.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="parallax"><img src="images/proyectosweb.jpg" alt="foto libro" class="responsive-img"></div>
-    </div>
-    <div class="container">
-        <div class="row center"><h6>(Las páginas están alojadas en servidores gratuitos y es posible alguna tarde en cargar)</h6></div>
-        <div class="row card animar" data-av-animation="slideInLeft">
-            <div class="icon-proyectos col m2 blue lighten-4">
-                <i class="material-icons medium">build</i>
-            </div>
-            <div class="col m10">
-                <a href="www.talleresguadamia.com" target="_blank">
-                    <div class="text-proyectos">
-                        <h5>Talleres Guadamia</h5>
-                        <hr>
-                        <p>Página web de un taller de autómiles modificada recientemente para su visualización en
-                            dispositivos móviles. Realizada en HTML 5, CSS 3 y algo de JAVASCRIPT.</p>
+
+            <div class="row card animar" data-av-animation="slideInRight">
+                <a href="http://www.toporiente.es" target="_blank">
+                    <div class="icon-proyectos col m2 blue lighten-4">
+                        <i class="material-icons medium">place</i>
+                    </div>
+                    <div class="col m10">
+                        <div class="text-proyectos">
+                            <h5>Toporiente</h5>
+                            <hr>
+                            <p>Página sencilla de presentación de empresa dedicada a la topografía. Realizada en HTML 5,
+                                CSS 3 y JQUERY.</p>
+                        </div>
                     </div>
                 </a>
             </div>
-        </div>
 
-        <div class="row card animar" data-av-animation="slideInRight">
-            <a href="http://www.toporiente.es" target="_blank">
+            <div class="row card animar" data-av-animation="slideInLeft">
                 <div class="icon-proyectos col m2 blue lighten-4">
-                    <i class="material-icons medium">place</i>
+                    <i class="material-icons medium">restaurant</i>
                 </div>
                 <div class="col m10">
-                    <div class="text-proyectos">
-                        <h5>Toporiente</h5>
-                        <hr>
-                        <p>Página sencilla de presentación de empresa dedicada a la topografía. Realizada en HTML 5,
-                            CSS 3 y JQUERY.</p>
+                    <a href="https://restaurantesybares.000webhostapp.com/" target="_blank">
+                        <div class="text-proyectos">
+                            <h5>Restaurante</h5>
+                            <hr>
+                            <p>Página para restaurantes. Hecha para practicar. Realizada en HTML 5, CSS 3, JQUERY y PHP. Con la
+                                particularidad de que el cliente tiene un panel de administración y puede modificar a su gusto
+                                los menús, tanto la descripción como los precios.</p>
+                        </div>
+                        </a>
+                </div>
+            </div>
+
+            <div class="row card animar" data-av-animation="slideInRight">
+                <a href="https://casaruralmaxi.000webhostapp.com" target="_blank">
+                    <div class="icon-proyectos col m2 blue lighten-4">
+                        <i class="material-icons medium">home</i>
+                    </div>
+                    <div class="col m10">
+                        <div class="text-proyectos">
+                            <h5>Casa rural</h5>
+                            <hr>
+                            <p>Página para una casa rural. Hecha para practicar. Realizada en HTML 5, CSS 3 y PHP. El
+                                usuario tiene la opción de realizar las reservas a través de la página web dónde se pueden
+                                ver las fechas ya reservadas. El cliente recibe un email con la petición de la reserva.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Contacto -->
+        <div class="parallax-container valign-wrapper" id="contacto">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h2 class="header col s12">Datos de contacto</h2>
                     </div>
                 </div>
-            </a>
-        </div>
-
-        <div class="row card animar" data-av-animation="slideInLeft">
-            <div class="icon-proyectos col m2 blue lighten-4">
-                <i class="material-icons medium">restaurant</i>
             </div>
-            <div class="col m10">
-                <a href="https://restaurantesybares.000webhostapp.com/" target="_blank">
-                    <div class="text-proyectos">
-                        <h5>Restaurante</h5>
-                        <hr>
-                        <p>Página para restaurantes. Hecha para practicar. Realizada en HTML 5, CSS 3, JQUERY y PHP. Con la
-                            particularidad de que el cliente tiene un panel de administración y puede modificar a su gusto
-                            los menús, tanto la descripción como los precios.</p>
-                    </div>
-                    </a>
-            </div>
+            <div class="parallax"><img src="images/correo.png" alt="foto libro" class="responsive-img"></div>
         </div>
-
-        <div class="row card animar" data-av-animation="slideInRight">
-            <a href="https://casaruralmaxi.000webhostapp.com" target="_blank">
-                <div class="icon-proyectos col m2 blue lighten-4">
-                    <i class="material-icons medium">home</i>
-                </div>
-                <div class="col m10">
-                    <div class="text-proyectos">
-                        <h5>Casa rural</h5>
-                        <hr>
-                        <p>Página para una casa rural. Hecha para practicar. Realizada en HTML 5, CSS 3 y PHP. El
-                            usuario tiene la opción de realizar las reservas a través de la página web dónde se pueden
-                            ver las fechas ya reservadas. El cliente recibe un email con la petición de la reserva.</p>
+        <div class="container" id="contacto">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card center">
+                        <p><strong>Nombre:</strong></p><p>Jose Luis Acebedo Parajón</p>
+                        <span><strong>Domicilio:</strong></span>
+                        <ul>
+                            <li> C/Comercio, 32, 2ºA</li>
+                            <li> 33560-Ribadesella, Asturias</li>
+                        </ul>
+                        <p><strong>Teléfono</strong>:</p><p>684 611 875</p>
+                        <p><strong>Correo:</strong></p><p>acebedo.parajon@gmail.com</p>
                     </div>
                 </div>
-            </a>
-        </div>
 
-    </div>
-
-    <!-- Contacto -->
-    <div class="parallax-container valign-wrapper" id="contacto">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h2 class="header col s12">Datos de contacto</h2>
-                </div>
             </div>
         </div>
-        <div class="parallax"><img src="images/correo.png" alt="foto libro" class="responsive-img"></div>
-    </div>
-    <div class="container" id="contacto">
-        <div class="row">
-            <div class="col s12">
-                <div class="card center">
-                    <p><strong>Nombre:</strong></p><p>Jose Luis Acebedo Parajón</p>
-                    <span><strong>Domicilio:</strong></span>
-                    <ul>
-                        <li> C/Comercio, 32, 2ºA</li>
-                        <li> 33560-Ribadesella, Asturias</li>
-                    </ul>
-                    <p><strong>Teléfono</strong>:</p><p>684 611 875</p>
-                    <p><strong>Correo:</strong></p><p>acebedo.parajon@gmail.com</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+    </main>
     <footer class="footer-page">
         <p>&copy; 2018 Jose Luis Acebedo Parajón</p>
     </footer>
