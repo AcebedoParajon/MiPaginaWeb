@@ -21,6 +21,7 @@
 
     <link rel="dns-prefetch" href="//acebedoparajon.esy.es">
     <link rel="dns-prefetch" href="//code.jquery.com/jquery-2.1.1.min.js">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
@@ -153,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2" class="responsive-img"></div>
+            <div class="parallax"><img data-src="images/background2.jpg" width="1226" height="767" alt="Unsplashed background img 2" class="responsive-img lazy"></div>
         </div>
         <div class="container">
             <div class="section">
@@ -268,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="parallax"><img src="images/estudios.jpg" alt="foto libro" class="responsive-img"></div>
+            <div class="parallax"><img data-src="images/estudios.jpg" width="1226" height="767" alt="foto libro" class="responsive-img lazy"></div>
         </div>
         <div class="container">
             <div class="col s12 card">
@@ -318,7 +319,7 @@
                     </div>
                 </div>
             </div>
-            <div class="parallax"><img src="images/proyectosweb.jpg" alt="foto libro" class="responsive-img"></div>
+            <div class="parallax"><img data-src="images/proyectosweb.jpg" alt="foto libro" class="responsive-img lazy"></div>
         </div>
         <div class="container">
             <div class="row center"><h6>(Las páginas están alojadas en servidores gratuitos y es posible alguna tarde en cargar)</h6></div>
@@ -399,7 +400,7 @@
                     </div>
                 </div>
             </div>
-            <div class="parallax"><img src="images/correo.png" alt="foto libro" class="responsive-img"></div>
+            <div class="parallax"><img data-src="images/correo.png" width="1226" height="767" alt="foto libro" class="responsive-img lazy"></div>
         </div>
         <div class="container" id="contacto">
             <div class="row">
@@ -424,14 +425,23 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js"></script>
     <script src="js/jquery.aniview.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
 
+    <!-- Iniciamos script animación de aniview(requiere jquery) retrasada -->
     <script>
         $(document).ready(function(){
             $('.animar').AniView();
         })
+    </script>
+
+    <!-- Iniciamos script lazyLoad (aparición de imágenes lazy -->
+    <script>
+        new LazyLoad({
+            elements_selector: ".lazy"
+        });
     </script>
 </body>
 
