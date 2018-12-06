@@ -7,6 +7,10 @@
     min-height: 550px;
 }
 
+.profile-page .button-container{
+  text-align: center;
+  margin-top: -35px;
+}
 .pg-header {
     height: 100vh;
     max-height: 1050px;
